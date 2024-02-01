@@ -20,7 +20,7 @@ class LIFOCache(BaseCaching):
                     and key not in self.cache_data.keys():
                 removed_key, _ = self.cache_data.popitem()
                 del self.cache_data[removed_key]
-                print("DISCARD:{}".format(removed_key))
+                print("DISCARD: {}". format(removed_key))
 
             self.cache_data[key] = item
 
